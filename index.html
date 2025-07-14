@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My spotify clone</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class = "brand"><img src ="my_spotify_icon.png" alt = "Spotify" width="47" height = "auto">Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+            
+        </ul>
+    </nav>
+
+    <div class = "container">
+        <div class = "SongList">
+            <h1>Best of NCS - No CopyRight Sounds</h1>
+            <div class = "songItemContainer">
+                <div class="songItem">
+                    <img src="covers/roots.png" alt="1">
+                    <span>Roots</span>
+                    <span class = "songlistplay"><span class= "timeStamp">05:34 <i id="1" class="fa-solid songItemPlay fa-circle-play"></i></span></i></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/who_says.png" alt="1">
+                    <span>Who Says</span>
+                    <span class = "songlistplay"><span class= "timeStamp">05:34 <i id="2"class="fa-solid songItemPlay fa-circle-play"></i></span></i></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/feel me.png" alt="1">
+                    <span>Feel me</span>
+                    <span class = "songlistplay"><span class= "timeStamp">05:34 <i id="3"class="fa-solid songItemPlay fa-circle-play"></i></span></i></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/baby_song.png" alt="1">
+                    <span>Baby</span>
+                    <span class = "songlistplay"><span class= "timeStamp">05:34 <i id="4"class="fa-solid songItemPlay fa-circle-play"></i></span></i></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/single_soon_big.png" alt="1">
+                    <span>Single Soon</span>
+                    <span class = "songlistplay"><span class= "timeStamp">05:34 <i id="5"class="fa-solid songItemPlay fa-circle-play"></i></span></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="MyProgressBar" min="0" value="0" max="100">
+        <div class = "icons">
+            <!-- fontAwesome icons -->
+             <i id="previous" class="fa-solid fa-backward-step"></i>
+             <i class="fa-solid fa-circle-play" id = "masterPlay"></i>
+             <i id="next" class="fa-solid fa-forward-step"></i>
+             <!-- <i class="fa-solid fa-circle-pause" id = "masterPlay"></i> -->
+        </div>
+        <div class="songInfo">
+            <img src="playing3.gif" width="40px" alt="" id = "gif"> <span id="masterSongName">Roots</span>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://kit.fontawesome.com/313af7b192.js" crossorigin="anonymous"></script> 
+    <script src = "script.js"></script>
+</body>
+</html>
